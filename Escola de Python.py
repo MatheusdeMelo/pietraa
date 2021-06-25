@@ -27,3 +27,13 @@ while True:
     else:
         print('Vc saiu, obriigada por jogar')
         break
+
+        1 - blouse
+        2 - Shorts
+        3 - pants
+        4
+        dresses
+        5 - exit
+        '' ')
+
+# ultima prova, to com saudadess, loja maressa.py
