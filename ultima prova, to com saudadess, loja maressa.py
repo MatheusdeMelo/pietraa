@@ -41,54 +41,51 @@ while escolha != 5:
             valor.append(20)
         if resposta == 3:
             Blouses['blusas'] = 'Blouse with snowflakes'
-            valor += 60
+            valor.append(60)
     elif escolha == 2:
         print('''
         [1] Basic black shorts. It is costing $10
         [2] Short jeans tumbler. as this is in fashion it will cost a little more. It is costing $50
         [3] Short saia. It is costing $35''')
         linhas()
-        pergunta()
-        linhas()
-        if pergunta() == 1:
+        barbie = pergunta()
+        if barbie == 1:
             Shorts['short'] = 'Basic black shorts'
-            valor += 10
-        if pergunta() == 2:
+            valor.append(10)
+        if barbie == 2:
             Shorts['short'] = 'Short tumbler'
-            valor += 50
-        if pergunta() == 3:
+            valor.append(50)
+        if barbie == 3:
             Shorts['short'] = 'Short saia'
-            valor += 35
+            valor.append(35)
     elif escolha == 3:
         print('''
         [1] pant jeans. It is costing $30
         [2] pant legging. It is costing $20''')
         linhas()
-        pergunta()
-        linhas()
-        if pergunta() == 1:
+        opção = pergunta()
+        if opção == 1:
             Pants['calças'] = 'pant jeans'
-            valor += 30
-        if pergunta() == 2:
+            valor.append(30)
+        if opção == 2:
             Pants['calças'] = 'pant legging'
-            valor += 20
+            valor.append(20)
     elif escolha == 4:
         print('''
         [1] Prom dress. It is costing $1050
         [2] baggy dress. It is costing $25
         [3] Long dress. It is costing $40''')
         linhas()
-        pergunta()
-        linhas()
-        if pergunta() == 1:
+        popcorn = pergunta()
+        if popcorn == 1:
             Dresses['vestidos'] = 'Prom dress'
-            valor += 1050
-        if pergunta() == 2:
+            valor.append(1050)
+        if popcorn == 2:
             Dresses['vestidos'] = 'baggy dress'
-            valor += 25
-        if pergunta() == 3:
+            valor.append(25)
+        if popcorn == 3:
             Dresses['vestidos'] = 'Long dress'
-            valor += 40
+            valor.append(40)
     elif escolha == 5:
         break
 print(f'goodbyee! The value of this purchase was {valor}')
