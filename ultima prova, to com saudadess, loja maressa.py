@@ -1,9 +1,9 @@
 print('welcome to the womens clothing store "ROZANE" ')
-#def pergunta():
-    #int(input('which one do you want? '))
+def pergunta():
+    return int(input('which one do you want? '))
 def linhas():
     print('-----------------------')
-valor = ()
+valor = []
 oi = ()
 Blouses = {}
 Shorts = {}
@@ -12,8 +12,6 @@ Dresses = {}
 escolha = {}
 Total = Blouses, Shorts, Pants, Dresses
 while escolha != 5:
-    def pergunta():
-        int(input('which one do you want? '))
     linhas()
     print('Todays clothes are: ')
     linhas()
@@ -33,15 +31,15 @@ while escolha != 5:
         [3] Blouse with snowflakes. This blouse is great for christmas and thanksgiving, its fabric is comfortable and reasonably warm, its value is for $60''')
 
         linhas()
-        pergunta()
+        resposta = pergunta()
         linhas()
-        if pergunta() == 1:
+        if resposta == 1:
             Blouses['blusas'] = 'Blouse of Mickey'
-            valor += 300
-        if pergunta() == 2:
+            valor.append(300)
+        if resposta == 2:
             Blouses['blusas'] = 'Zebra print blouse'
-            valor += 20
-        if pergunta() == 3:
+            valor.append(20)
+        if resposta == 3:
             Blouses['blusas'] = 'Blouse with snowflakes'
             valor += 60
     elif escolha == 2:
@@ -94,7 +92,3 @@ while escolha != 5:
     elif escolha == 5:
         break
 print(f'goodbyee! The value of this purchase was {valor}')
-linhas()
-troco = int(input('Do you will need how much change?? '))
-linhas()
-print(f'You paid: {valor}, your change was: {troco}')
